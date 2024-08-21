@@ -5,7 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
     <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+        }
         .todo-item { 
             margin-bottom: 10px; 
         }
@@ -13,11 +26,11 @@
 </head>
 <body>
     <div class="container mt-4">
-        <h1 class="mb-4 text-center">To-Do List Sample</h1>
+        <h1 class="mb-4 text-center">To-Do List</h1>
         <div class="input-group mb-3">
             <input type="text" class="form-control" id="newTask" placeholder="Add a new task">
             <div class="input-group-append">
-                <button class="btn btn-success" id="addTaskButton" >Add Task</button>
+                <button class="btn btn-primary" id="addTaskButton">Add Task</button>
             </div>
         </div>
         <ul class="list-group" id="taskList"></ul>
@@ -26,6 +39,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
