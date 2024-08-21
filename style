@@ -1,0 +1,17 @@
+/* styles.css */
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-remove {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+}
+
+.btn-remove:hover {
+    background-color: #c82333;
+}
